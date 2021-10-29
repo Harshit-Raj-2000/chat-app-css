@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    font-size: 16px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    z-index: -1;
+}
+
+.background-gradient-div{
+    position: absolute;
+    top: 0;
+    left:-90px;
+    width: 500px;
+    height: 650px;
+    background: linear-gradient(225deg,hsl(293, 100%, 63%), 40%, hsl(264, 100%, 61%));
+    z-index: 0;
+    border-radius: 0 0 400px 350px;
+}
+
+#right-bottom{
+    position: absolute;
+    bottom: 0;
+    right:-90px;
+    width: 500px;
+    height: 650px;
+    background: linear-gradient(315deg,rgba(111, 25, 122 , 0.05), 50%, hsl(264, 100%, 61%, 0.05));
+    z-index: 0;
+    border-radius: 400px 350px 0 0;
+
+}
+
+.phone-div{
+    min-width: 240px;
+    max-width: 240px;
+    height: 470px;
+    background-color: hsl(270, 20%, 96%);
+    border: 8px solid hsl(0, 0%, 100%);
+    border-radius: 30px;
+    z-index: 2;
+    margin-right: 250px;
+    margin-left: 20px;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    box-shadow: 10px 20px 50px 20px hsl(270, 7%, 64%, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.text-div{
+    z-index: 2;
+    width: 400px;
+    min-width: 200px;
+    margin-right: 40px;
+}
+
+.main-heading{
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+.main-text{
+    color: hsl(270, 7%, 64%);
+    font-weight: 400;
+    margin-top: 25px;
+    padding: 10px;
+    padding-left:0px;
+    margin-bottom: 20px; 
+}
+
+
+.gradient-background{
+    background: linear-gradient(225deg,hsl(293, 100%, 63%), 40%, hsl(264, 100%, 61%));
+}
+
+#top-notch{
+    position: absolute;
+    width: 55%;
+    height: 4%;
+    background-color:hsl(0, 0%, 100%);
+    top: 0px;
+    left: 23%;
+    border-radius: 0px 0px 15px 15px;
+    z-index: -1;
+}
+
+#top-app-background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 17%;
+    border-radius: 30px 30px 10px 10px;
+    z-index: -2;
+}
+
+.profile-pic{
+    width: 40px;
+    height: auto;
+    border: 2px solid hsl(276, 100%, 81%);
+    border-radius: 200px;
+}
+
+.dog-image{
+    width: 40px;
+    border-radius: 10px;
+}
+.dog-image-container{
+    align-self: flex-end;
+}
+
+.name-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.name-container{
+   margin-left: 10px;
+}
+.name{
+   color: hsl(276, 100%, 81%);
+   font-weight: 500;
+}
+
+.status{
+   color: hsl(289, 100%, 72%);;
+   font-weight: 400;
+   font-size: 0.8rem;
+}
+
+.left-chat, .right-chat{
+   font-weight: 400;
+   font-size: 0.6rem;
+}
+
+.left-chat{
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(271, 15%, 43%, 0.2);
+    padding: 5px;
+    max-width: 70%;
+    border-radius: 10px 10px 10px 5px;
+}
+
+.right-chat{
+    color:  hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 5px;
+    max-width: 70%;
+    border-radius: 10px 10px 5px 10px;
+    align-self: flex-end;
+    box-shadow: 0 5px 10px hsl(270, 7%, 64%, 0.3);
+}
+
+.pay-chat{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    justify-content: space-around;
+    padding: 5px;
+    max-width: 70%;
+    color:hsl(0, 0%, 100%);
+    border-radius: 10px 10px 10px 5px;
+    background: linear-gradient(225deg,hsl(293, 100%, 63%), 40%, hsl(264, 100%, 61%));
+}
+
+.pay-chat-text{
+    font-weight: 400;
+    font-size: 0.6rem;
+}
+
+.pay-chat-cost{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.message-input{
+    width: 100%;
+    padding: 12px;
+    color:hsl(206, 6%, 79%);
+    background-color:hsl(0, 0%, 100%); 
+    font-weight: 400;
+    font-size: 0.6rem;
+    border-radius: 20px;
+}
+
+.message-input::after{
+    content: '>';
+    font-size: 1rem;
+    color: hsl(0, 0%, 100%); 
+    padding: 2px 8px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+@media screen and (max-width:760px){
+    .container{
+        width:auto;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .phone-div{
+        margin: 30px;
+        margin-top: 60px;
+    }
+
+    .text-div{
+        margin: 0;
+        text-align: center;
+    }
+
+    .background-gradient-div{
+        min-width: none;
+        width: 50vw;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 500px 0;
+    }
+
+    #right-bottom{
+        display: none;
+    }
+}
